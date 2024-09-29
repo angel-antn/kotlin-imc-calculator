@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
             setWeight()
         }
         btnMinusWeight.setOnClickListener {
-            if (currentWeight >= 0) {
+            if (currentWeight > 1) {
                 currentWeight -= 1
                 setWeight()
             }
@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
             setAge()
         }
         btnMinusAge.setOnClickListener {
-            if (currentAge >= 1) {
+            if (currentAge > 1) {
                 currentAge -= 1
                 setAge()
             }
